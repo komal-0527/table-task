@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        height: 100vh;
+      }
+
+      td {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+      }
+
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .left-side,
+      .right-side {
+        width: 180px;
+        vertical-align: top;
+      }
+
+      .top-nav {
+        height: 80px;
+        background-color: #333;
+        color: white;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 40px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+      }
+
+      .navbar a:hover {
+        background-color: #555;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td rowspan="4" class="left-side">
+          <img src="images/download.jfif" alt="" />
+          <h3>
+            Web Developer
+            <br />
+            Frontend Developer
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quae maxime reiciendis adipisci nisi totam ipsa rerum sit laudantium
+            amet.
+          </p>
+        </td>
+        <td colspan="4" class="top-nav">
+          <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+        </td>
+        <!-- <td>3</td>
+        <td>4</td>
+        <td>5</td> -->
+      </tr>
+      <!-- row one -->
+      <tr>
+        <!-- <td>1</td> -->
+        <td>
+          <img
+            width="300"
+            height="200"
+            src="images/download.jfif"
+            alt="image-sample"
+          />
+        </td>
+        <td>
+          <video width="300" height="200" controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </td>
+        <td>
+          <div
+            style="
+              width: 300px;
+              height: 200px;
+              overflow: auto;
+              border: 1px solid #ccc;
+              padding: 5px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 5px;
+            "
+          >
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+          </div>
+        </td>
+        <td rowspan="3" class="right-side">
+          <img src="images/download.jfif" alt="" />
+          <h3>
+            Web Developer
+            <br />
+            Frontend Developer
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quae maxime reiciendis adipisci nisi totam ipsa rerum sit laudantium
+            amet.
+          </p>
+        </td>
+      </tr>
+      <!-- row two -->
+      <tr>
+        <!-- <td>1</td> -->
+        <td>
+          <iframe
+            width="300"
+            height="250"
+            src="https://www.youtube.com/embed/uBOyrAwc7yg?si=WH-uScWqxnMeM4Wm"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </td>
+        <td>
+          <iframe
+            width="300"
+            height="250"
+            src="http://127.0.0.1:5500/table.html"
+            frameborder="0"
+          ></iframe>
+        </td>
+        <td>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418509.37735734176!2d74.00473526794504!3d31.482517988876463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Pakistan!5e1!3m2!1sen!2s!4v1753167080135!5m2!1sen!2s"
+            width="300"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </td>
+        <!-- <td></td> -->
+      </tr>
+      <tr>
+        <!-- <td>1</td> -->
+        <td>
+          <div
+            style="
+              width: 300px;
+              height: 200px;
+              overflow: auto;
+              padding: 10px;
+              border: 1px solid #ccc;
+            "
+          >
+            <form>
+              <label for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                style="width: 100%"
+              /><br /><br />
+
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                style="width: 100%"
+              /><br /><br />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </td>
+        <td>
+          <div
+            style="
+              width: 300px;
+              height: 200px;
+              overflow: auto;
+              border: 1px solid #ccc;
+              padding: 5px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 5px;
+            "
+          >
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+            <img
+              src="images/download.jfif"
+              width="90"
+              height="60"
+              alt="image-product"
+            />
+          </div>
+        </td>
+        <td>
+          <audio controls>
+            <source
+              src="https://www.w3schools.com/html/horse.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </td>
+        <!-- <td>5</td> -->
+      </tr>
+    </table>
+  </body>
+</html>
